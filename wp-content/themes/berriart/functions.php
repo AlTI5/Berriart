@@ -14,7 +14,8 @@ class Berriart {
         wp_register_script('foundation-modernizer', get_template_directory_uri() . '/javascripts/foundation/modernizr.foundation.js', array(), '2.6.0');
         wp_register_script('foundation-jquery', get_template_directory_uri() . '/javascripts/foundation/jquery.js', array(), '1.8.1', true);
         wp_register_script('foundation-placeholder', get_template_directory_uri() . '/javascripts/foundation/jquery.placeholder.js', array('foundation-jquery'), '2.0.7', true);
-        wp_register_script('berriart', get_template_directory_uri() . '/javascripts/app.js', array('foundation-modernizer', 'foundation-jquery', 'foundation-placeholder'), self::VERSION, true);
+        wp_register_script('foundation-navigation', get_template_directory_uri() . '/javascripts/foundation/jquery.foundation.navigation.js', array('foundation-jquery'), '2.0.7', true);
+        wp_register_script('berriart', get_template_directory_uri() . '/javascripts/app.js', array('foundation-modernizer', 'foundation-jquery', 'foundation-placeholder', 'foundation-navigation'), self::VERSION, true);
         wp_enqueue_script('berriart'); 
         
         /*

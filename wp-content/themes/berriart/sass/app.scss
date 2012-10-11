@@ -45,3 +45,21 @@
 // @import "foundation/components/modules/orbit";
 // @import "foundation/components/modules/reveal";
 // @import "foundation/components/modules/offcanvas";
+
+.top-bar {
+    margin-bottom: 0;
+}
+
+#theblog {
+    background: #f6f6f6 url(../images/berriart.jpg) no-repeat;
+    background-size:contain;
+    
+    .main {
+        background: #fff;
+        background: rgba(255, 255, 255, .8);
+        border-right: 4px solid #666;
+        border-left: 4px solid #666;
+        padding: 20px;
+    }
+}
+

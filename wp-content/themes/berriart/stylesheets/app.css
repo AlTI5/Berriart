@@ -19,7 +19,7 @@ body {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1;
-  color: #222222;
+  color: black;
   position: relative;
   -webkit-font-smoothing: antialiased;
 }
@@ -931,7 +931,7 @@ form.custom .custom.disabled {
 /* The Grid ---------------------- */
 /* line 3, ../../../../../../lib/gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row {
-  width: 1000px;
+  width: 1200px;
   max-width: 100%;
   min-width: 768px;
   margin: 0 auto;
@@ -2626,7 +2626,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 }
 /* line 28, ../../../../../../lib/gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_topbar.scss */
 .contain-to-grid .top-bar {
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
 }
 /* line 33, ../../../../../../lib/gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_topbar.scss */
@@ -3325,7 +3325,7 @@ div.orbit-wrapper span.rotator {
   position: absolute;
   top: 0;
   left: -20px;
-  background: url('/images/foundation/orbit/rotator-black.png?1349824168') no-repeat;
+  background: url('/images/foundation/orbit/rotator-black.png?1349904504') no-repeat;
   z-index: 3;
 }
 
@@ -3350,7 +3350,7 @@ div.orbit-wrapper span.rotator.move {
 div.orbit-wrapper span.mask.move {
   width: 40px;
   left: 0;
-  background: url('/images/foundation/orbit/timer-black.png?1349824168') repeat 0 0;
+  background: url('/images/foundation/orbit/timer-black.png?1349904504') repeat 0 0;
 }
 
 /* line 82, ../../../../../../lib/gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_orbit.scss */
@@ -3361,14 +3361,14 @@ div.orbit-wrapper span.pause {
   position: absolute;
   top: 0;
   left: 0;
-  background: url('/images/foundation/orbit/pause-black.png?1349824168') no-repeat;
+  background: url('/images/foundation/orbit/pause-black.png?1349904504') no-repeat;
   z-index: 4;
   opacity: 0;
 }
 
 /* line 93, ../../../../../../lib/gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper span.pause.active {
-  background: url('/images/foundation/orbit/pause-black.png?1349824168') no-repeat 0 -40px;
+  background: url('/images/foundation/orbit/pause-black.png?1349904504') no-repeat 0 -40px;
 }
 
 /* line 97, ../../../../../../lib/gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_orbit.scss */
@@ -3420,25 +3420,25 @@ div.orbit-wrapper div.slider-nav span {
 
 /* line 134, ../../../../../../lib/gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.slider-nav span.right {
-  background: url('/images/foundation/orbit/right-arrow.png?1349824168');
+  background: url('/images/foundation/orbit/right-arrow.png?1349904504');
   background-size: 100%;
   right: 0;
 }
 
 /* line 139, ../../../../../../lib/gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.slider-nav span.left {
-  background: url('/images/foundation/orbit/left-arrow.png?1349824168');
+  background: url('/images/foundation/orbit/left-arrow.png?1349904504');
   background-size: 100%;
   left: 0;
 }
 
 /* line 145, ../../../../../../lib/gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_orbit.scss */
 .lt-ie9 div.orbit-wrapper div.slider-nav span.right {
-  background: url('/images/foundation/orbit/right-arrow-small.png?1349824168');
+  background: url('/images/foundation/orbit/right-arrow-small.png?1349904504');
 }
 /* line 146, ../../../../../../lib/gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_orbit.scss */
 .lt-ie9 div.orbit-wrapper div.slider-nav span.left {
-  background: url('/images/foundation/orbit/left-arrow-small.png?1349824168');
+  background: url('/images/foundation/orbit/left-arrow-small.png?1349904504');
 }
 
 /* Bullet Nav ---------------------- */
@@ -3460,7 +3460,7 @@ ul.orbit-bullets li {
   cursor: pointer;
   color: #999;
   text-indent: -9999px;
-  background: url('/images/foundation/orbit/bullets.jpg?1349824168') no-repeat 4px 0;
+  background: url('/images/foundation/orbit/bullets.jpg?1349904504') no-repeat 4px 0;
   width: 13px;
   height: 12px;
   overflow: hidden;
@@ -3517,7 +3517,7 @@ ul.orbit-bullets li {
   cursor: pointer;
   color: #999;
   text-indent: -9999px;
-  background: url('/images/foundation/orbit/bullets.jpg?1349824168') no-repeat 4px 0;
+  background: url('/images/foundation/orbit/bullets.jpg?1349904504') no-repeat 4px 0;
   width: 13px;
   height: 12px;
   overflow: hidden;
@@ -3718,7 +3718,7 @@ dl.tabs dd {
 }
 /* line 15, ../../../../../../lib/gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_tabs.scss */
 dl.tabs dd a {
-  color: #6f6f6f;
+  color: #4d4d4d;
   display: block;
   font-size: 14px;
   height: 40px;
@@ -3738,7 +3738,7 @@ dl.tabs dd.active {
 /* line 19, ../../../../../../lib/gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/modules/_tabs.scss */
 dl.tabs dd.active a {
   cursor: default;
-  color: #3c3c3c;
+  color: #1a1a1a;
   background: #fff;
   border-left: 1px solid #e6e6e6;
   border-right: 1px solid #e6e6e6;
@@ -4968,4 +4968,23 @@ div.progress.round .meter {
   -ms-border-radius: 1000px;
   -o-border-radius: 1000px;
   border-radius: 1000px;
+}
+
+/* line 49, ../sass/app.scss */
+.top-bar {
+  margin-bottom: 0;
+}
+
+/* line 53, ../sass/app.scss */
+#theblog {
+  background: #f6f6f6 url(../images/berriart.jpg) no-repeat;
+  background-size: contain;
+}
+/* line 57, ../sass/app.scss */
+#theblog .main {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  border-right: 4px solid #666;
+  border-left: 4px solid #666;
+  padding: 20px;
 }
