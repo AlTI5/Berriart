@@ -36,3 +36,36 @@
         <?php wp_head(); ?>
 </head>
 <body>
+    <div class="fixed">
+        <header class="top-bar">
+            <ul>
+                <li class="name"><h1><a href="<?php echo icl_get_home_url(); ?>"><span>&lt;?</span> berri<span>art</span></a></h1></li>
+                <li class="toggle-topbar"><a href="#"></a></li>
+            </ul>
+            <div>
+                <div class="left">
+                    <p><?php _e('Web Development With Free Software', Berriart::LANG_DOMAIN); ?></p>
+                </div>
+                <nav>
+                    <ul class="right">
+                        <li class="has-dropdown">
+                            <a href="#">Categories</a>
+                            <ul class="dropdown">
+                              <li><a href="#">Dropdown Link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                        <li><a href="http://www.albertovarelasanchez.com/"><?php _e('My Resume', Berriart::LANG_DOMAIN); ?></a></li>
+                        <li><a href="#">About This Blog</a></li>
+                        <?php $languages = icl_get_languages('skip_missing=N&orderby=KEY&order=DIR&link_empty_to=str'); ?>
+                        <?php if('es' == ICL_LANGUAGE_CODE): ?>
+                            <li><a href="<?php echo $languages['en']['url']; ?>">English?</a></li>
+                        <?php else: ?>
+                            <li><a href="<?php echo $languages['es']['url']; ?>">¿Español?</a></li>
+                        <?php endif; ?>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
