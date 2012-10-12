@@ -30,5 +30,11 @@
       }, 0);
     });
   }
+  
+  // Highlight
+  $('pre.javascript').snippet("javascript",{style:"neon",clipboard:"/swf/ZeroClipboard.swf"});
+  $('pre.html').snippet("html",{style:"neon",clipboard:"/swf/ZeroClipboard.swf"});
+  $('pre.php').snippet("php",{style:"neon",clipboard:"/swf/ZeroClipboard.swf"});
+  $('pre').snippet("perl", {style:"neon",clipboard:"/swf/ZeroClipboard.swf",showNum:false});
 
 })(jQuery, this);

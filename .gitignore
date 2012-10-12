@@ -1,2 +1,4 @@
+.htaccess
 wp-custom-config.php
+wp-content/uploads/
 wp-content/themes/berriart/.sass-cache/

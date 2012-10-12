@@ -15,7 +15,8 @@ class Berriart {
         wp_register_script('foundation-jquery', get_template_directory_uri() . '/javascripts/foundation/jquery.js', array(), '1.8.1', true);
         wp_register_script('foundation-placeholder', get_template_directory_uri() . '/javascripts/foundation/jquery.placeholder.js', array('foundation-jquery'), '2.0.7', true);
         wp_register_script('foundation-navigation', get_template_directory_uri() . '/javascripts/foundation/jquery.foundation.navigation.js', array('foundation-jquery'), '2.0.7', true);
-        wp_register_script('berriart', get_template_directory_uri() . '/javascripts/app.js', array('foundation-modernizer', 'foundation-jquery', 'foundation-placeholder', 'foundation-navigation'), self::VERSION, true);
+        wp_register_script('jquery-snippet', get_template_directory_uri() . '/javascripts/jquery.snippet.min.js', array('foundation-jquery'), '2.0.0', true);
+        wp_register_script('berriart', get_template_directory_uri() . '/javascripts/app.js', array('jquery-snippet', 'foundation-modernizer', 'foundation-jquery', 'foundation-placeholder', 'foundation-navigation'), self::VERSION, true);
         wp_enqueue_script('berriart'); 
         
         /*
@@ -53,6 +54,30 @@ class Berriart {
         wp_enqueue_style('berriart');
         
         
+    }
+    
+    public function contentNav( $nav_id ) {
+	global $wp_query;
+
+	if ( $wp_query->max_num_pages > 1 ) : ?>
+		<nav id="<?php echo $nav_id; ?>">
+			<h3 class="assistive-text"><?php _e( 'Post navigation', self::LANG_DOMAIN ); ?></h3>
+			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', self::LANG_DOMAIN ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', self::LANG_DOMAIN ) ); ?></div>
+		</nav><!-- #nav-above -->
+	<?php endif;
+    }
+    
+    public function postedOn() {
+        printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', self::LANG_DOMAIN ),
+            esc_url( get_permalink() ),
+            esc_attr( get_the_time() ),
+            esc_attr( get_the_date( 'c' ) ),
+            esc_html( get_the_date() ),
+            esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+            esc_attr( sprintf( __( 'View all posts by %s', self::LANG_DOMAIN ), get_the_author() ) ),
+            get_the_author()
+        );
     }
 }
 
