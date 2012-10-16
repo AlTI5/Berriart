@@ -151,6 +151,24 @@ box-shadow: 2px 2px 5px #000;
 }
 /* End Highlight */
 
+/* Hiding admin bar */
+html.js {
+    margin-top: 0 !important;
+    
+    #wpadminbar {
+        display:none;
+    }
+}
+
+/* Fixing recaptcha */
+#recaptcha_area {
+    margin-bottom: 20px;
+    
+    #recaptcha_response_field {
+        height: auto;
+    }
+}
+
 .forkme {
     position: absolute; 
     top: 45px; 
@@ -206,6 +224,9 @@ p {
         font-family: fantasy;
         text-transform: uppercase;
         padding-left: 20px;
+        @media only screen and (max-width: 1124px) {
+            display: none;
+        }
     }
 }
 
