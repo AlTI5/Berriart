@@ -7055,9 +7055,16 @@ div.progress.round .meter {
   background: rgba(0, 0, 0, 0.8);
   margin-bottom: 20px;
 }
+/* line 146, ../sass/app.scss */
+.snippet-wrap pre.sh_sourceCode li {
+  font-family: monospace;
+  font-size: 13px;
+  font-size: 1.3rem;
+  margin-bottom: 0 !important;
+}
 
 /* End Highlight */
-/* line 148, ../sass/app.scss */
+/* line 154, ../sass/app.scss */
 .forkme {
   position: absolute;
   top: 45px;
@@ -7066,39 +7073,49 @@ div.progress.round .meter {
   z-index: 10;
 }
 
-/* line 157, ../sass/app.scss */
+/* line 162, ../sass/app.scss */
+.hidden-label {
+  display: none;
+}
+
+/* line 165, ../sass/app.scss */
+.no-js .hidden-label {
+  display: inherit;
+}
+
+/* line 169, ../sass/app.scss */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
 }
 
-/* line 161, ../sass/app.scss */
+/* line 173, ../sass/app.scss */
 p {
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
 }
 
-/* line 166, ../sass/app.scss */
+/* line 178, ../sass/app.scss */
 .top-bar {
   margin-bottom: 0;
 }
-/* line 169, ../sass/app.scss */
+/* line 181, ../sass/app.scss */
 .top-bar ul > li a {
   font-family: Arial, sans-serif;
 }
-/* line 176, ../sass/app.scss */
+/* line 188, ../sass/app.scss */
 .top-bar > ul .name h1 a {
   font-size: 20px !important;
   font-size: 2rem !important;
   font-family: monospace;
 }
-/* line 181, ../sass/app.scss */
+/* line 193, ../sass/app.scss */
 .top-bar > ul .name h1 a span {
   color: orange;
 }
-/* line 189, ../sass/app.scss */
+/* line 201, ../sass/app.scss */
 .top-bar p {
   height: 45px;
   line-height: 45px;
@@ -7109,30 +7126,30 @@ p {
   padding-left: 20px;
 }
 
-/* line 201, ../sass/app.scss */
+/* line 213, ../sass/app.scss */
 .pagination-container ul.pagination li {
   background: #f0f0f0;
   margin-left: 10px;
 }
-/* line 205, ../sass/app.scss */
+/* line 217, ../sass/app.scss */
 .pagination-container ul.pagination li span {
   display: block;
   padding: 1px 7px;
 }
-/* line 210, ../sass/app.scss */
+/* line 222, ../sass/app.scss */
 .pagination-container ul.pagination li.current, .pagination-container ul.pagination li:hover a {
   background: #ff8800;
   color: white;
 }
 
-/* line 217, ../sass/app.scss */
+/* line 229, ../sass/app.scss */
 #theblog {
   background: #f6f6f6 url(../images/berriart.jpg) no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   padding-top: 45px;
 }
-/* line 223, ../sass/app.scss */
+/* line 235, ../sass/app.scss */
 #theblog .main {
   background: #fff;
   background: rgba(255, 255, 255, 0.9);
@@ -7140,44 +7157,44 @@ p {
   border-left: 4px solid #666;
   padding: 20px;
 }
-/* line 230, ../sass/app.scss */
+/* line 242, ../sass/app.scss */
 #theblog .main article {
   border-bottom: 1px dashed #BBBBBB;
   margin-bottom: 50px;
   padding-bottom: 20px;
 }
-/* line 235, ../sass/app.scss */
+/* line 247, ../sass/app.scss */
 #theblog .main article h1 {
   font-size: 32px;
   font-size: 3.2rem;
   font-family: monospace;
   letter-spacing: -2px;
 }
-/* line 240, ../sass/app.scss */
+/* line 252, ../sass/app.scss */
 #theblog .main article h1 a {
   color: #000;
 }
-/* line 243, ../sass/app.scss */
+/* line 255, ../sass/app.scss */
 #theblog .main article h1 a:hover {
   text-decoration: underline;
 }
-/* line 249, ../sass/app.scss */
+/* line 261, ../sass/app.scss */
 #theblog .main article h2 {
   font-size: 24px;
   font-size: 2.4rem;
   color: #333;
 }
-/* line 254, ../sass/app.scss */
+/* line 266, ../sass/app.scss */
 #theblog .main article h3 {
   font-size: 20px;
   font-size: 2rem;
   color: #333;
 }
-/* line 260, ../sass/app.scss */
+/* line 272, ../sass/app.scss */
 #theblog .main article .entry-content li {
   margin-bottom: 5px;
 }
-/* line 265, ../sass/app.scss */
+/* line 277, ../sass/app.scss */
 #theblog .main article .entry-meta {
   font-size: 12px;
   font-size: 1.2rem;
@@ -7194,56 +7211,62 @@ p {
   margin-bottom: 15px;
   color: #333;
 }
-/* line 274, ../sass/app.scss */
+/* line 286, ../sass/app.scss */
 #theblog .main article .entry-meta a {
   color: #333;
   text-decoration: underline;
 }
-/* line 282, ../sass/app.scss */
+/* line 294, ../sass/app.scss */
 #theblog .sidebar-container {
   font-family: Arial, sans-serif;
 }
-/* line 285, ../sass/app.scss */
+/* line 297, ../sass/app.scss */
 #theblog .sidebar-container p {
   font-style: normal;
   font-size: 14px;
   font-size: 1.4rem;
   color: white;
 }
-/* line 291, ../sass/app.scss */
+/* line 303, ../sass/app.scss */
 #theblog .sidebar-container .sidebar {
   margin-top: 30px;
 }
-/* line 294, ../sass/app.scss */
+/* line 306, ../sass/app.scss */
 #theblog .sidebar-container .sidebar h1 {
   color: #ff8800;
 }
-/* line 298, ../sass/app.scss */
+/* line 310, ../sass/app.scss */
+#theblog .sidebar-container .sidebar section {
+  margin-bottom: 30px;
+}
+/* line 313, ../sass/app.scss */
 #theblog .sidebar-container .sidebar section.me {
   padding: 20px;
   background: rgba(0, 0, 0, 0.9);
 }
-/* line 302, ../sass/app.scss */
+/* line 317, ../sass/app.scss */
 #theblog .sidebar-container .sidebar section.me img {
   border: 1px solid #bbb;
-  float: left;
-  margin: 0 10px 10px 0;
+}
+/* line 323, ../sass/app.scss */
+#theblog .sidebar-container .sidebar section.search img {
+  border: 1px solid #ccc;
 }
 
-/* line 312, ../sass/app.scss */
+/* line 332, ../sass/app.scss */
 #footer {
   color: white;
   background: black;
 }
-/* line 316, ../sass/app.scss */
+/* line 336, ../sass/app.scss */
 #footer .social-icons {
   text-align: center;
 }
-/* line 319, ../sass/app.scss */
+/* line 339, ../sass/app.scss */
 #footer .social-icons a {
   color: white;
 }
-/* line 321, ../sass/app.scss */
+/* line 341, ../sass/app.scss */
 #footer .social-icons a:hover {
   -webkit-transition: color 500ms;
   -moz-transition: color 500ms;
@@ -7251,14 +7274,14 @@ p {
   transition: color 500ms;
   color: orange;
 }
-/* line 325, ../sass/app.scss */
+/* line 345, ../sass/app.scss */
 #footer .social-icons a .icon {
   padding: 40px 0;
   font-size: 48px;
   font-size: 4.8rem;
   display: block;
 }
-/* line 334, ../sass/app.scss */
+/* line 354, ../sass/app.scss */
 #footer .copy {
   font-family: Arial, sans-serif;
   font-size: 12px;

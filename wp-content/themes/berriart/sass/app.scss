@@ -142,6 +142,12 @@ box-shadow: 2px 2px 5px #000;
 .snippet-wrap pre.sh_sourceCode {
     background: rgba(0,0,0,.8);
     margin-bottom: 20px;
+    
+    li {
+        font-family: monospace;
+        @include font-size(13);
+        margin-bottom: 0 !important;
+    }
 }
 /* End Highlight */
 
@@ -153,6 +159,12 @@ box-shadow: 2px 2px 5px #000;
     z-index: 10;
 }
 
+.hidden-label {
+    display: none;
+}
+.no-js .hidden-label {
+    display: inherit;
+}
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
@@ -294,15 +306,23 @@ p {
             h1 {
                 color: $mainColor;
             }
+            
+            section {
+                margin-bottom: 30px;
 
-            section.me {
-                padding: 20px;
-                background: rgba(0, 0, 0, .9);
-                
-                img {
-                    border: 1px solid #bbb;
-                    float:left;
-                    margin: 0 10px 10px 0;
+                &.me {
+                    padding: 20px;
+                    background: rgba(0, 0, 0, .9);
+
+                    img {
+                        border: 1px solid #bbb;
+                    }
+                }
+
+                &.search {
+                    img {
+                        border: 1px solid #ccc;
+                    }
                 }
             }
         }

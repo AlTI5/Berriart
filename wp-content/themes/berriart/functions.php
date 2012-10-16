@@ -15,9 +15,10 @@ class Berriart {
         wp_register_script('foundation-jquery', get_template_directory_uri() . '/javascripts/foundation/jquery.js', array(), '1.8.1', true);
         wp_register_script('foundation-placeholder', get_template_directory_uri() . '/javascripts/foundation/jquery.placeholder.js', array('foundation-jquery'), '2.0.7', true);
         wp_register_script('foundation-navigation', get_template_directory_uri() . '/javascripts/foundation/jquery.foundation.navigation.js', array('foundation-jquery'), '2.0.7', true);
+        wp_register_script('foundation-alerts', get_template_directory_uri() . '/javascripts/foundation/jquery.foundation.alerts.js', array('foundation-jquery'), '2.0.7', true);
         wp_register_script('foundation-tooltips', get_template_directory_uri() . '/javascripts/foundation/jquery.foundation.tooltips.js', array('foundation-jquery'), '2.0.7', true);
         wp_register_script('jquery-snippet', get_template_directory_uri() . '/javascripts/jquery.snippet.min.js', array('foundation-jquery'), '2.0.0', true);
-        wp_register_script('berriart', get_template_directory_uri() . '/javascripts/app.js', array('jquery-snippet', 'foundation-modernizer', 'foundation-tooltips', 'foundation-jquery', 'foundation-placeholder', 'foundation-navigation'), self::VERSION, true);
+        wp_register_script('berriart', get_template_directory_uri() . '/javascripts/app.js', array('jquery-snippet', 'foundation-modernizer', 'foundation-alerts', 'foundation-tooltips', 'foundation-jquery', 'foundation-placeholder', 'foundation-navigation'), self::VERSION, true);
         wp_enqueue_script('berriart'); 
         
         /*
@@ -36,10 +37,6 @@ class Berriart {
 	<script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
 	
 	<script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
 	
 	<script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
 	
@@ -70,14 +67,11 @@ class Berriart {
     }
     
     public function postedOn() {
-        printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', self::LANG_DOMAIN ),
+        printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a>', self::LANG_DOMAIN ),
             esc_url( get_permalink() ),
             esc_attr( get_the_time() ),
             esc_attr( get_the_date( 'c' ) ),
-            esc_html( get_the_date() ),
-            esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-            esc_attr( sprintf( __( 'View all posts by %s', self::LANG_DOMAIN ), get_the_author() ) ),
-            get_the_author()
+            esc_html( get_the_date() )
         );
     }
     

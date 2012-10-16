@@ -32,9 +32,20 @@
   }
   
   // Highlight
-  $('pre.javascript').snippet("javascript",{style:"neon",clipboard:"/swf/ZeroClipboard.swf"});
-  $('pre.html').snippet("html",{style:"neon",clipboard:"/swf/ZeroClipboard.swf"});
-  $('pre.php').snippet("php",{style:"neon",clipboard:"/swf/ZeroClipboard.swf"});
-  $('pre').snippet("perl", {style:"neon",clipboard:"/swf/ZeroClipboard.swf",showNum:false});
+  $('pre').each(function(i,e){
+      var $this = $(this);
+      if($this.hasClass('php')) {
+          $this.snippet("php",{style:"neon",clipboard:"/swf/ZeroClipboard.swf"});
+      }
+      else if($this.hasClass('javascript')) {
+          $this.snippet("javascript",{style:"neon",clipboard:"/swf/ZeroClipboard.swf"});
+      }
+      else if($this.hasClass('html')) {
+          $this.snippet("html",{style:"neon",clipboard:"/swf/ZeroClipboard.swf"});
+      }
+      else {
+          $this.snippet("perl", {style:"neon",clipboard:"/swf/ZeroClipboard.swf",showNum:false});
+      }
+  });
 
 })(jQuery, this);
